@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Summarizer</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body class="center-container">
+    <div class="content-wrapper">
+        <h1>Upload your code file for summarization</h1>
+        <form action="/summarize" method="post" enctype="multipart/form-data" class="form-center">
+            <input type="file" name="code_file">
+            <select name="language">
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="java">Java</option>
+                <option value="go">Go</option>
+                <option value="rust">Rust</option>
+                <option value="cpp">C++</option>
+            </select>
+            <button type="submit">Summarize</button>
+        </form>
+    </div>
+</body>
+</html>
